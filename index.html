@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Lab — Diseño Web Minimalista</title>
+  <meta name="description" content="Estudio creativo de diseño y desarrollo web en Buenos Aires. Sitios rápidos, minimalistas y listos para escalar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23000000'/><text x='50' y='60' font-size='60' text-anchor='middle' fill='%23ffffff' font-family='Arial'>F</text></svg>">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="nav">
+    <a class="logo" href="#hero" aria-label="Ir a la portada">Digital<span>LAB</span></a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+    <label for="nav-toggle" class="burger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav-menu" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn small" href="./login.html">Ingresar</a>
+      <a class="btn small outline" href="./registro.html">Crear cuenta</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Diseño web limpio. <br/>Rendimiento real.</h1>
+      <p>Construimos sitios minimalistas y rápidos que convierten. Código semántico, accesibilidad, SEO base y escalabilidad desde el día uno.</p>
+      <div class="cta">
+        <a href="#contacto" class="btn">Quiero mi web</a>
+        <a href="#proyectos" class="btn outline">Ver trabajos</a>
+      </div>
+      <ul class="badges">
+        <li>⚡ Carga veloz</li>
+        <li>📱 100% responsive</li>
+        <li>🧭 UX clara</li>
+        <li>🔍 SEO on‑page</li>
+      </ul>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="glow"></div>
+      <img src="img/inicio.jpg" alt="Workspace minimalista con laptop y luz suave">
+    </div>
+  </section>
+
+  <!-- About / Beneficios -->
+  <section id="beneficios" class="section">
+    <div class="container two-col">
+      <div>
+        <h2>¿Por qué elegirnos?</h2>
+        <p>Somos un estudio boutique con foco en <strong>performance y claridad</strong>. Diseñamos interfaces simples que priorizan el contenido y la conversión. Nada de ruido, solo valor.</p>
+        <p>Trabajamos con un proceso transparente: briefing, wireframes, diseño visual y entrega. Todo documentado y con entregables reales.</p>
+      </div>
+      <div class="benefits">
+        <article class="card mini">
+          <h3>Tiempo de carga</h3>
+          <p>Optimización de imágenes, tipografías y CSS para que tu web vuele.</p>
+        </article>
+        <article class="card mini">
+          <h3>Accesibilidad</h3>
+          <p>Estructura semántica y contraste adecuados para todos los usuarios.</p>
+        </article>
+        <article class="card mini">
+          <h3>SEO Base</h3>
+          <p>Metadatos, headings y contenido listo para indexar y escalar.</p>
+        </article>
+        <article class="card mini">
+          <h3>Escalabilidad</h3>
+          <p>Arquitectura ordenada y mantenible para crecer sin dolores.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios (cards con imagen) -->
+  <section id="servicios" class="section alt">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="grid cards">
+        <article class="card">
+          <img src="img/ux ui.png" alt="Diseño UI con estilo minimalista">
+          <div class="card-body">
+            <h3>Diseño UI/UX</h3>
+            <p>Interfaces claras con foco en contenido, legibilidad y objetivos de negocio.</p>
+            <div class="price">$120.000 ARS</div>
+            <a href="#contacto" class="btn small">Pedir cotización</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/cafe.png" alt="Landing page con tipografía moderna">
+          <div class="card-body">
+            <h3>Landing Page</h3>
+            <p>Páginas de alta conversión con estructura persuasiva y SEO on‑page.</p>
+            <div class="price">$150.000 ARS</div>
+            <a href="#contacto" class="btn small">Pedir cotización</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/ecomerce.png" alt="Mockup de e‑commerce minimalista">
+          <div class="card-body">
+            <h3>E‑commerce Base</h3>
+            <p>Diseño listo para integrar con tu stack y métodos de pago locales.</p>
+            <div class="price">$250.000 ARS</div>
+            <a href="#contacto" class="btn small">Pedir cotización</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos (cards informativas) -->
+  <section id="proyectos" class="section">
+    <div class="container">
+      <h2>Proyectos</h2>
+      <div class="grid cards">
+        <article class="card info">
+          <img src="img/cafe.png" alt="Sitio web de cafetería de especialidad">
+          <div class="card-body">
+            <h3>Café Origen</h3>
+            <p>Branding sobrio y menú claro. +38% en reservas online en 60 días.</p>
+            <a href="#contacto" class="btn small outline">Quiero algo así</a>
+          </div>
+        </article>
+        <article class="card info">
+          <img src="img/tienda nube.png" alt="Sitio de estudio creativo">
+          <div class="card-body">
+            <h3>Estudio Nube</h3>
+            <p>Estructura modular y SEO base. Lighthouse 95+ en móvil y desktop.</p>
+            <a href="#contacto" class="btn small outline">Quiero algo así</a>
+          </div>
+        </article>
+        <article class="card info">
+          <img src="img/planeta verde.png" alt="Sitio web para ONG">
+          <div class="card-body">
+            <h3>Fundación Verde</h3>
+            <p>Arquitectura de información clara + donaciones destacadas.</p>
+            <a href="#contacto" class="btn small outline">Quiero algo así</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section alt">
+    <div class="container two-col">
+      <div>
+        <h2>Contacto</h2>
+        <p>Contanos sobre tu proyecto y te respondemos con una propuesta simple y transparente.</p>
+        <form class="form" action="#" method="post">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos objetivos, tiempos y referencias" required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+      <div class="map-card">
+        <h3>Estamos en Buenos Aires</h3>
+        <p>Atendemos de forma remota y presencial con agenda.</p>
+        <div class="map-embed">
+          <iframe title="Mapa de Buenos Aires" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26273.640030532397!2d-58.445!3d-34.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb2e1b0e4c7f%3A0x198c5f0f3b4c7d10!2sBuenos%20Aires!5e0!3m2!1ses!2sar!4v1700000000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <ul class="contact-info">
+          <li>📧 hola@DLstudio.dev</li>
+          <li>📱 +54 9 2243 415757</li>
+          <li>📍 Palermo, CABA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="#hero">Digital <span>Lab</span></a>
+        <p>Diseño y desarrollo web minimalista de alto rendimiento.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="auth">
+        <a class="btn small" href="./login.html">Ingresar</a>
+        <a class="btn small outline" href="./registro.html">Crear cuenta</a>
+      </div>
+    </div>
+    <p class="copy">© <span id="year">2025</span> Digital Lab. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
